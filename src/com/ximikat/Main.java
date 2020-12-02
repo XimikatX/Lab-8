@@ -1,6 +1,5 @@
 package com.ximikat;
 
-import java.awt.image.ImagingOpException;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +12,7 @@ public class Main {
         List<String> dates = new ArrayList<>();
         try (BufferedReader input = new BufferedReader(new FileReader("input.txt"))) {
 
-            String line = null;
+            String line;
             while ((line = input.readLine()) != null) {
                 if (line.length() == 0) {
                     continue;
